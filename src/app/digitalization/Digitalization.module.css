@@ -1,0 +1,224 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px 100px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* HERO */
+.hero {
+  padding: 120px 0 80px;
+  text-align: center;
+}
+
+.tag {
+  color: #3b82f6;
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.hero h1 {
+  font-size: 64px;
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 24px;
+  color: white;
+}
+
+.hero h1 span {
+  background: linear-gradient(to right, #3b82f6, #8b5cf6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.lead {
+  font-size: 20px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.7);
+  max-width: 700px;
+  margin: 0 auto 40px;
+}
+
+/* WORKFLOW PATH */
+.workflowPathSection {
+  position: relative;
+  padding: 80px 0;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.pathLine {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, transparent, rgba(59, 130, 246, 0.5) 15%, rgba(139, 92, 246, 0.5) 85%, transparent);
+  transform: translateX(-50%);
+}
+
+.stagesList {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.stageItem {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+
+.stageContent {
+  width: 45%;
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 40px;
+  border-radius: 32px;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+}
+
+.stageItem:hover .stageContent {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: #3b82f6;
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.5);
+}
+
+.left {
+  justify-content: flex-start;
+}
+
+.right {
+  justify-content: flex-end;
+}
+
+.dot {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 16px;
+  height: 16px;
+  background: #3b82f6;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  border: 4px solid #020617;
+  z-index: 2;
+  box-shadow: 0 0 15px rgba(59, 130, 246, 0.8);
+}
+
+.stageNumber {
+  font-size: 13px;
+  font-weight: 800;
+  color: #3b82f6;
+  margin-bottom: 12px;
+  letter-spacing: 0.1em;
+}
+
+.stageContent h3 {
+  font-size: 22px;
+  color: #fff;
+  margin-bottom: 16px;
+  letter-spacing: -0.02em;
+}
+
+.stageContent p {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.5);
+  line-height: 1.6;
+}
+
+/* IMPACT */
+.impactSection {
+  padding: 100px 0;
+}
+
+.impactGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  text-align: center;
+}
+
+.impactCard {
+  padding: 48px;
+  background: linear-gradient(135deg, rgba(37, 99, 235, 0.1), rgba(139, 92, 246, 0.1));
+  border-radius: 32px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.impactCard h3 {
+  font-size: 56px;
+  font-weight: 800;
+  color: white;
+  margin-bottom: 12px;
+  letter-spacing: -0.04em;
+}
+
+.impactCard p {
+  font-size: 15px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.7);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* CTA */
+.cta {
+  background: linear-gradient(135deg, #1e40af, #7e22ce);
+  padding: 100px 40px;
+  border-radius: 48px;
+  text-align: center;
+  margin-top: 100px;
+  box-shadow: 0 40px 100px -20px rgba(37, 99, 235, 0.3);
+}
+
+.cta h2 {
+  font-size: 48px;
+  font-weight: 800;
+  color: white;
+  margin-bottom: 20px;
+  letter-spacing: -0.03em;
+}
+
+.cta p {
+  font-size: 19px;
+  margin-bottom: 40px;
+  color: rgba(255, 255, 255, 0.8);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btnLarge {
+  background: white;
+  color: #2563eb;
+  border: none;
+  padding: 18px 48px;
+  border-radius: 16px;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btnLarge:hover {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 900px) {
+  .hero h1 { font-size: 48px; }
+  .pathLine { left: 20px; transform: none; }
+  .dot { left: 20px; transform: translate(-50%, -50%); }
+  .stageContent { width: calc(100% - 60px); margin-left: 60px; }
+  .left, .right { justify-content: flex-start; }
+  .impactGrid { grid-template-columns: 1fr; }
+}
