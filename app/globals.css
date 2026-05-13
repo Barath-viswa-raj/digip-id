@@ -1,0 +1,227 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #000080;
+  --primary: #004080;
+  --secondary: #0066cc;
+  --accent: #0000ff;
+  --muted: #f0f4f8;
+  --border: #d1d5db;
+  --gradient-1: linear-gradient(135deg, #004080 0%, #00264d 100%);
+  --gradient-2: linear-gradient(135deg, #0066cc 0%, #004499 100%);
+  --gradient-3: linear-gradient(135deg, #0000ff 0%, #0000b3 100%);
+  --gradient-dark: linear-gradient(135deg, #ffffff 0%, #f0f4f8 50%, #ffffff 100%);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-inter);
+  --font-mono: var(--font-jetbrains-mono);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-inter), system-ui, -apple-system, sans-serif;
+  overflow-x: hidden;
+}
+
+.gradient-text {
+  background: var(--gradient-1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gradient-bg {
+  background: var(--gradient-dark);
+}
+
+.glass-effect {
+  background: rgba(26, 26, 46, 0.3);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(0, 212, 255, 0.2);
+  box-shadow: 0 8px 32px rgba(0, 212, 255, 0.1);
+}
+
+.glass-hover:hover {
+  background: rgba(26, 26, 46, 0.5);
+  border: 1px solid rgba(0, 212, 255, 0.4);
+  box-shadow: 0 12px 48px rgba(0, 212, 255, 0.2);
+  transform: translateY(-2px);
+  transition: all 0.3s ease;
+}
+
+.tech-grid {
+  background-image: 
+    linear-gradient(rgba(0, 212, 255, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 212, 255, 0.1) 1px, transparent 1px);
+  background-size: 50px 50px;
+}
+
+.pulse-animation {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.float-animation {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.glow-effect {
+  box-shadow: 0 0 20px rgba(0, 212, 255, 0.5);
+}
+
+.glow-hover:hover {
+  box-shadow: 0 0 30px rgba(0, 212, 255, 0.8);
+  transition: box-shadow 0.3s ease;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--muted);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--secondary);
+}
+
+/* Code block styling */
+code {
+  font-family: var(--font-jetbrains-mono), monospace;
+  background: rgba(0, 212, 255, 0.1);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+pre {
+  font-family: var(--font-jetbrains-mono), monospace;
+  background: var(--muted);
+  padding: 16px;
+  border-radius: 8px;
+  overflow-x: auto;
+  border: 1px solid var(--border);
+}
+
+/* Button animations */
+.btn-primary {
+  background: var(--gradient-1);
+  color: var(--background);
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 212, 255, 0.4);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--primary);
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: 2px solid var(--primary);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-secondary:hover {
+  background: var(--primary);
+  color: var(--background);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 212, 255, 0.4);
+}
+
+/* Card animations */
+.card-hover {
+  transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 48px rgba(0, 212, 255, 0.2);
+}
+
+/* Section spacing */
+section {
+  scroll-margin-top: 80px;
+}
+
+/* Better text alignment */
+.text-justify {
+  text-align: justify;
+}
+
+/* Container fixes */
+.container-center {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 640px) {
+  .container-center {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container-center {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
