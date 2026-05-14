@@ -1001,6 +1001,7 @@ export default function Home() {
               <p style={S.eyebrow('#00ff88')}>The Team</p>
               <h2 style={S.h2()}>Built at <span style={{ color: '#004080' }}>Sri Eshwar College</span></h2>
               <p style={{ ...S.sub(), margin: '0 auto', textAlign: 'center' }}>Team TG0912524 · TECHgium® 9th Edition · Coimbatore, Tamil Nadu</p>
+              <p style={{ ...S.sub(), margin: '0 auto', textAlign: 'center' }}>By Pentium Predators</p>
             </div>
           </RevealSection>
 
