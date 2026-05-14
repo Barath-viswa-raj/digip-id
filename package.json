@@ -1,9 +1,5 @@
 {
-<<<<<<< HEAD
   "name": "digi-webpage",
-=======
-  "name": "techgium",
->>>>>>> 2f4d9d5e4ec2500931767dc5b0c35c24d0b11eff
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -13,7 +9,6 @@
     "lint": "eslint"
   },
   "dependencies": {
-<<<<<<< HEAD
     "lucide-react": "^1.14.0",
     "next": "16.2.6",
     "react": "19.2.4",
@@ -28,15 +23,5 @@
     "eslint-config-next": "16.2.6",
     "tailwindcss": "^4",
     "typescript": "^5"
-=======
-    "next": "16.1.1",
-    "react": "19.2.3",
-    "react-dom": "19.2.3"
-  },
-  "devDependencies": {
-    "babel-plugin-react-compiler": "1.0.0",
-    "eslint": "^9",
-    "eslint-config-next": "16.1.1"
->>>>>>> 2f4d9d5e4ec2500931767dc5b0c35c24d0b11eff
   }
 }
