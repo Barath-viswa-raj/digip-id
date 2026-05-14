@@ -222,7 +222,7 @@ const team = [
   { name: 'Darshan R.A', role: 'AI & Computer Vision', detail: 'YOLO model training, image preprocessing pipeline, symbol detection architecture', avatar: 'DA', grad: 'linear-gradient(135deg,#00d4ff,#0066cc)' },
   { name: 'SujayNithish N', role: 'Backend & API Architecture', detail: 'FastAPI backend, graph assembly engine, JSON output pipeline, system integration', avatar: 'SN', grad: 'linear-gradient(135deg,#00ff88,#00cc66)' },
   { name: 'Barath ViswaRaj S', role: 'Frontend & UX', detail: 'Next.js interface, human review UI, demo presentation, design system', avatar: 'BV', grad: 'linear-gradient(135deg,#a78bfa,#7c3aed)' },
-  { name: 'Mohammed Aswath M', role: 'AI & Computer Vision', detail: 'P&ID domain expertise, product strategy, industry validation, POC roadmap', avatar: 'MA', grad: 'linear-gradient(135deg,#f97316,#dc2626)' },
+  { name: 'Mohammed Aswath M', role: 'AI & Computer Vision', detail: 'YOLO model training, image preprocessing pipeline, symbol detection architecture', avatar: 'MA', grad: 'linear-gradient(135deg,#f97316,#dc2626)' },
 ];
 
 const sampleJSON = `{
@@ -1020,15 +1020,7 @@ export default function Home() {
           </div>
 
           {/* Mentor */}
-          <RevealSection delay={200}>
-            <div style={{ marginTop: 40, textAlign: 'center' }}>
-              <div style={{ display: 'inline-block', background: '#ffffff', border: '1px solid #e2e8f0', borderRadius: 16, padding: '24px 48px', boxShadow: '0 4px 6px rgba(0,0,0,0.05)' }}>
-                <div style={{ fontSize: 11, color: '#475569', letterSpacing: 2, textTransform: 'uppercase', marginBottom: 8, fontFamily: 'DM Mono,monospace' }}>Faculty Mentor</div>
-                <div style={{ fontSize: 16, fontWeight: 700, color: '#000080', fontFamily: 'Syne,sans-serif' }}>Sri Eshwar College of Engineering</div>
-                <div style={{ fontSize: 12, color: '#475569', marginTop: 4 }}>Department of Computer Science & Engineering</div>
-              </div>
-            </div>
-          </RevealSection>
+
         </div>
       </section>
 
