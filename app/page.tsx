@@ -222,9 +222,9 @@ const team = [
   { name: 'Darshan R.A', role: 'AI & Computer Vision', detail: 'YOLO model training, image preprocessing pipeline, symbol detection architecture', Phone: '+91 9489241506', email: 'darshanananth123@gmail.com', avatar: 'DA', grad: 'linear-gradient(135deg,#00d4ff,#0066cc)' },
   { name: 'SujayNithish N', role: 'Backend & API Architecture', detail: 'FastAPI backend, graph assembly engine, JSON output pipeline, system integration', Phone: '+91 9444274237', email: 'Sujaynithish2004@gmail.com', avatar: 'SN', grad: 'linear-gradient(135deg,#00ff88,#00cc66)' },
   { name: 'Barath ViswaRaj S', role: 'Frontend & UX', detail: 'Next.js interface, human review UI, demo presentation, design system', Phone: '+91 9600678204', email: 'sbarathviswaraj@gmail.com', avatar: 'BV', grad: 'linear-gradient(135deg,#a78bfa,#7c3aed)' },
-  { name: 'Mohammed Aswath M', role: 'AI & Computer Vision', detail: 'YOLO model training, image preprocessing pipeline, symbol detection architecture', Phone: '+91 8248547453', email: '', avatar: 'MA', grad: 'linear-gradient(135deg,#f97316,#dc2626)' },
+  { name: 'Mohammed Aswath M', role: 'AI & Computer Vision', detail: 'YOLO model training, image preprocessing pipeline, symbol detection architecture', Phone: '+91 8248547453', email: 'mohammed.aswath07@gmail.com', avatar: 'MA', grad: 'linear-gradient(135deg,#f97316,#dc2626)' },
 ];
-  
+
 const sampleJSON = `{
   "pid_id": "TG0912524",
   "plant": "Refinery Unit 3 — Crude Distillation",
