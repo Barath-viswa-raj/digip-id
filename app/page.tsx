@@ -219,12 +219,12 @@ const roadmap = [
 ];
 
 const team = [
-  { name: 'Darshan R.A', role: 'AI & Computer Vision', detail: 'YOLO model training, image preprocessing pipeline, symbol detection architecture', Phone: '+91 9489241506', email: '', avatar: 'DA', grad: 'linear-gradient(135deg,#00d4ff,#0066cc)' },
-  { name: 'SujayNithish N', role: 'Backend & API Architecture', detail: 'FastAPI backend, graph assembly engine, JSON output pipeline, system integration', Phone: '+91 9444274237', avatar: 'SN', grad: 'linear-gradient(135deg,#00ff88,#00cc66)' },
-  { name: 'Barath ViswaRaj S', role: 'Frontend & UX', detail: 'Next.js interface, human review UI, demo presentation, design system', Phone: '+91 9600678204', avatar: 'BV', grad: 'linear-gradient(135deg,#a78bfa,#7c3aed)' },
-  { name: 'Mohammed Aswath M', role: 'AI & Computer Vision', detail: 'YOLO model training, image preprocessing pipeline, symbol detection architecture', Phone: '+91 8248547453', avatar: 'MA', grad: 'linear-gradient(135deg,#f97316,#dc2626)' },
+  { name: 'Darshan R.A', role: 'AI & Computer Vision', detail: 'YOLO model training, image preprocessing pipeline, symbol detection architecture', Phone: '+91 9489241506', email: 'darshanananth123@gmail.com', avatar: 'DA', grad: 'linear-gradient(135deg,#00d4ff,#0066cc)' },
+  { name: 'SujayNithish N', role: 'Backend & API Architecture', detail: 'FastAPI backend, graph assembly engine, JSON output pipeline, system integration', Phone: '+91 9444274237', email: 'Sujaynithish2004@gmail.com', avatar: 'SN', grad: 'linear-gradient(135deg,#00ff88,#00cc66)' },
+  { name: 'Barath ViswaRaj S', role: 'Frontend & UX', detail: 'Next.js interface, human review UI, demo presentation, design system', Phone: '+91 9600678204', email: 'sbarathviswaraj@gmail.com', avatar: 'BV', grad: 'linear-gradient(135deg,#a78bfa,#7c3aed)' },
+  { name: 'Mohammed Aswath M', role: 'AI & Computer Vision', detail: 'YOLO model training, image preprocessing pipeline, symbol detection architecture', Phone: '+91 8248547453', email: '', avatar: 'MA', grad: 'linear-gradient(135deg,#f97316,#dc2626)' },
 ];
-
+  
 const sampleJSON = `{
   "pid_id": "TG0912524",
   "plant": "Refinery Unit 3 — Crude Distillation",
@@ -1014,7 +1014,19 @@ export default function Home() {
                   </div>
                   <h3 style={{ fontSize: 17, fontWeight: 700, color: '#000080', marginBottom: 6, fontFamily: 'Syne,sans-serif' }}>{m.name}</h3>
                   <div style={{ fontSize: 13, color: '#004080', fontWeight: 600, marginBottom: 12 }}>{m.role}</div>
-                  <p style={{ fontSize: 12, color: '#475569', lineHeight: 1.7 }}>{m.detail}</p>
+                  <p style={{ fontSize: 12, color: '#475569', lineHeight: 1.7, marginBottom: 16 }}>{m.detail}</p>
+                  <div style={{ borderTop: '1px solid #e2e8f0', paddingTop: 14, display: 'flex', flexDirection: 'column', gap: 8 }}>
+                    {m.Phone && (
+                      <a href={`tel:${m.Phone}`} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 6, fontSize: 12, color: '#004080', textDecoration: 'none', fontFamily: 'DM Mono,monospace', fontWeight: 500 }}>
+                        <span>📞</span> {m.Phone}
+                      </a>
+                    )}
+                    {m.email && (
+                      <a href={`mailto:${m.email}`} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 6, fontSize: 12, color: '#0066cc', textDecoration: 'none', fontFamily: 'DM Mono,monospace', fontWeight: 500 }}>
+                        <span>✉️</span> {m.email}
+                      </a>
+                    )}
+                  </div>
                 </div>
               </RevealSection>
             ))}
