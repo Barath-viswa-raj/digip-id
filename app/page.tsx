@@ -219,10 +219,10 @@ const roadmap = [
 ];
 
 const team = [
-  { name: 'Darshan R.A', role: 'AI & Computer Vision', detail: 'YOLO model training, image preprocessing pipeline, symbol detection architecture', avatar: 'DA', grad: 'linear-gradient(135deg,#00d4ff,#0066cc)' },
-  { name: 'SujayNithish N', role: 'Backend & API Architecture', detail: 'FastAPI backend, graph assembly engine, JSON output pipeline, system integration', avatar: 'SN', grad: 'linear-gradient(135deg,#00ff88,#00cc66)' },
-  { name: 'Barath ViswaRaj S', role: 'Frontend & UX', detail: 'Next.js interface, human review UI, demo presentation, design system', avatar: 'BV', grad: 'linear-gradient(135deg,#a78bfa,#7c3aed)' },
-  { name: 'Mohammed Aswath M', role: 'AI & Computer Vision', detail: 'YOLO model training, image preprocessing pipeline, symbol detection architecture', avatar: 'MA', grad: 'linear-gradient(135deg,#f97316,#dc2626)' },
+  { name: 'Darshan R.A', role: 'AI & Computer Vision', detail: 'YOLO model training, image preprocessing pipeline, symbol detection architecture', Phone: '+91 9489241506', email: '', avatar: 'DA', grad: 'linear-gradient(135deg,#00d4ff,#0066cc)' },
+  { name: 'SujayNithish N', role: 'Backend & API Architecture', detail: 'FastAPI backend, graph assembly engine, JSON output pipeline, system integration', Phone: '+91 9444274237', avatar: 'SN', grad: 'linear-gradient(135deg,#00ff88,#00cc66)' },
+  { name: 'Barath ViswaRaj S', role: 'Frontend & UX', detail: 'Next.js interface, human review UI, demo presentation, design system', Phone: '+91 9600678204', avatar: 'BV', grad: 'linear-gradient(135deg,#a78bfa,#7c3aed)' },
+  { name: 'Mohammed Aswath M', role: 'AI & Computer Vision', detail: 'YOLO model training, image preprocessing pipeline, symbol detection architecture', Phone: '+91 8248547453', avatar: 'MA', grad: 'linear-gradient(135deg,#f97316,#dc2626)' },
 ];
 
 const sampleJSON = `{
@@ -231,7 +231,7 @@ const sampleJSON = `{
   "components": [
     {
       "id": "P-101",
-      "type": "CentrifugalPump",
+      "type": "CentrifugalPump",  
       "label": "Feed Pump",
       "tag": "P-101A",
       "confidence": 0.97,
